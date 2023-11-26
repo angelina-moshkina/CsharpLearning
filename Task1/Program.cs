@@ -11,8 +11,8 @@ namespace Task1
         }
         static void Main(string[] args)
         {
-            Order order1 = new Order ("Whyskas", 13.50f, 3753361728362, "Gagarina 150 / 250");
-            Order order2 = new Order("Whiskas", 15.70f, 3752961728361, "Voronicha 26/140");
+            Order order1 = new Order ("Whyskas", 13.50f, 375336258362, "Gagarina 150 / 250");
+            Order order2 = new Order("Whiskas", 15.70f, 3752965828361, "Voronicha 26/140");
             Order order3 = new Order("Kiteket", 99.90f, 5441234599, "Mira 10/132");
             Order order4 = new Order("Purina", 20.90f, 5441234599, "Mira 10/132");
 
@@ -20,7 +20,7 @@ namespace Task1
 
             order1.ProductPrice = 10001f;
             order1.BuyerPhoneNumber = 012345678901234;
-            order3.BuyerPhoneNumber = 3753361728361;
+            order3.BuyerPhoneNumber = 3753367728361;
 
             //TASK_1.2 вывести в цикле на экран полную информацию о всех заказах в массиве
             foreach (Order item in orders)
