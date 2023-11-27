@@ -24,6 +24,7 @@ namespace Task1
         }
 
         private float _productPrice;
+        //3. Для стоимости товара в set части добавить проверку (стомость должна быть положительной, но не превышать 1000)
         public float ProductPrice 
         { 
             get
@@ -32,10 +33,12 @@ namespace Task1
             }
             set
             {
-                if (value > 0 && value < 1000) _productPrice = value;
+                if (value > 0 && value <= 1000) _productPrice = value;
             }
         }
+
         private long _buyerPhoneNumber;
+        //Для номера телефона заказчика в свойстве в set части добавить  проверку (в номере должно быть ровно 13 цифр)
         public long BuyerPhoneNumber 
         {
             get 
